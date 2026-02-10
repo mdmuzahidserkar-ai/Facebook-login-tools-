@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dummy Login Facebook</title>
+    <link rel="stylesheet" type="text/css" href="login-facebook.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>facebook</h1>
+            <h3>Facebook helps you connect and share with the people in your life.</h3>
+        </div>
+
+        <div class="right-section">
+            <div class="login-form">
+                <form action="">
+                    <input type="email" placeholder="Email address or phone number">
+                    <input type="password" placeholder="Password">
+                    <button type="submit">Log In</button>
+                </form>
+                <p>Forgotten password?</p>
+                <hr>
+                <div class="create-account">
+                    <a href="#">Create new account</a>
+                </div>
+            </div>
+            <span><a href="#">Create a Page</a> for a celebrity, brand or business.</span>
+        </div>
+    </div>
+</body>
+</html>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: #f2f4f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.left-section {
+  width: 50%;
+  margin-top: 50px;
+}
+
+.left-section h1 {
+  font-size: 70px;
+  color: #1877f2;
+}
+
+.left-section h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.right-section {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}.login-form {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-shadow: -10px -10px 15px rgba(0, 0, 0, .1),
+               10px 10px 15px rgba(0, 0, 0, .1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  padding: 0 15px;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  margin: 8px 0;
+  padding: 0 10px;
+  font-size: 16px;
+  border: 1px solid #dddcdc;
+  border-radius: 10px;
+  outline-color: #6eadff;
+}
+
+input:focus::placeholder {
+  opacity: 0.7;
+}button {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  padding: 0 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  background: #1877f2;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background: #0e72f3;
+}
+
+.create-account {
+  width: 250px;
+  height: 50px;
+  background: #50d436;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.create-account:hover {
+  background: #3fcd23;
+}
+
+.create-account a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}p {
+  color: #1877f2;
+  font-size: 14px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+p:hover {
+  text-decoration: underline;
+}
+
+span {
+  margin-top: 15px;
+  font-size: 15px;
+  text-align: center;
+}
+
+span a {
+  color: #000;
+  font-weight: 550;
+  text-decoration: none;
+}
+
+hr {
+  width: 100%;
+  opacity: 0.2;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
