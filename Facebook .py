@@ -39,7 +39,13 @@ DOCTYPE html>
 }
 
 body {
-  height: 100vh;
+  html = """
+<style>
+body {
+    height: 100vh;
+}
+</style>
+"""
   width: 100%;
   background: #f2f4f7;
   display: flex;
